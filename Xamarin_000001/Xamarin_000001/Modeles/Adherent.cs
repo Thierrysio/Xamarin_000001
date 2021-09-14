@@ -33,6 +33,10 @@ namespace Xamarin_000001.Modeles
 
         #endregion
         #region Methodes
+        public string GetConcat()
+        {
+            return this.Nom + " " + this.Prenom;
+        }
         #endregion
     }
 }

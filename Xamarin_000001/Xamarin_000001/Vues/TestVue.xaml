@@ -7,6 +7,12 @@
             <Label Text="{Binding Adherent1.Nom}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Label Text="{Binding Resultat}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

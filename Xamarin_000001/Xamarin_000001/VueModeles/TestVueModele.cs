@@ -9,11 +9,13 @@ namespace Xamarin_000001.VueModeles
     {
         #region Attributs
         private Adherent _adherent1;
+        private string _resultat;
         #endregion
         #region Constructeurs
         public TestVueModele()
         {
-            _adherent1 = new Adherent(1, "nom1", "prenom1", "adresse1");
+            _adherent1 = new Adherent(1, "enfaillite", "melusine", "adresse1");
+            Resultat = Adherent1.GetConcat();
         }
         #endregion
         #region Getters/Setters
@@ -26,6 +28,17 @@ namespace Xamarin_000001.VueModeles
             set
             {
                 SetProperty(ref _adherent1, value);
+            }
+        }
+        public string Resultat
+        {
+            get
+            {
+                return _resultat;
+            }
+            set
+            {
+                SetProperty(ref _resultat, value);
             }
         }
         #endregion
