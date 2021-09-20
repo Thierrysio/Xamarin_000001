@@ -11,7 +11,7 @@ namespace Xamarin_000001
         {
             InitializeComponent();
 
-            MainPage = new TestVue();
+            MainPage = new TourneeVue();
         }
 
         protected override void OnStart()

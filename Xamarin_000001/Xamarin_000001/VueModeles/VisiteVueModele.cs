@@ -5,44 +5,51 @@ using Xamarin_000001.Modeles;
 
 namespace Xamarin_000001.VueModeles
 {
-    class TestVueModele : BaseVueModele
+    class VisiteVueModele : BaseVueModele
     {
         #region Attributs
-        private Adherent _adherent1;
-        private string _resultat;
+        Visite _uneVisite;
+        Adherent _unAdherent;
+
         #endregion
+
         #region Constructeurs
-        public TestVueModele()
+
+        public VisiteVueModele()
         {
-            //_adherent1 = new Adherent(1, "enfaillite", "melusine", "adresse1");
-            //Resultat = Adherent1.GetConcat();
+            UnAdherent = new Adherent(1, "nom1", "prenom1", "adresse1",50);
+            UneVisite = new Visite(DateTime.Now, UnAdherent);
         }
+
         #endregion
+
         #region Getters/Setters
-        public Adherent Adherent1
+        public Adherent UnAdherent
         {
             get
             {
-                return _adherent1;
+                return _unAdherent;
             }
             set
             {
-                SetProperty(ref _adherent1, value);
+                SetProperty(ref _unAdherent, value);
             }
         }
-        public string Resultat
+        public Visite UneVisite
         {
             get
             {
-                return _resultat;
+                return _uneVisite;
             }
             set
             {
-                SetProperty(ref _resultat, value);
+                SetProperty(ref _uneVisite, value);
             }
         }
         #endregion
-        #region methodes
+
+        #region Methodes
+
         #endregion
     }
 }
