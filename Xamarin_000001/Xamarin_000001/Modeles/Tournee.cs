@@ -49,6 +49,7 @@ namespace Xamarin_000001.Modeles
 
             this.LesVisites.Add(param);
             param.LaTournee = this;
+            //param.AjoutTournee(this);
             this.CalculKmsRealises();
 
         }
