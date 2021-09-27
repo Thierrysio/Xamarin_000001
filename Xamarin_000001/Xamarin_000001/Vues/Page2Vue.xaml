@@ -4,9 +4,10 @@
              x:Class="Xamarin_000001.Vues.Page2Vue">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="page 2"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Saisir une valeur" Text="{Binding Valeur1}" />
+            <Entry Placeholder="Saisir une valeur" Text="{Binding Valeur2}"/>
+            <Button Text="Additionner" Command="{Binding CommandBoutonAddition}"/>
+            <Label Text="{Binding Resultat}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
