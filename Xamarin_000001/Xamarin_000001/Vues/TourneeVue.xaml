@@ -11,8 +11,13 @@
             <Button Text="page 2" 
                     BackgroundColor="#C72D2D" 
                     CornerRadius="15" 
-                    Command="{Binding CommandBoutonPage2}"
-                    />
+                    Command="{Binding CommandBoutonPage2}"/>
+            <Label Text="{Binding Cpt}" HorizontalOptions="Center" FontSize="40" Padding="20" Margin="20,0" />
+                <Button Text="Compteur" 
+                    BackgroundColor="#C72D2D" 
+                    CornerRadius="15" 
+                    Command="{Binding CommandBoutonCompteur}" Margin="20,0"
+                />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
