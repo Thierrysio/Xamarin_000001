@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace Xamarin_000001.Modeles
@@ -39,6 +40,19 @@ namespace Xamarin_000001.Modeles
         public string GetConcat()
         {
             return this.Nom + " " + this.Prenom;
+        }
+
+        public static ObservableCollection<Adherent> GetListAll()
+        {
+            ObservableCollection<Adherent> resultat = new ObservableCollection<Adherent>();
+
+            foreach (Adherent unAdherent in Adherent.CollClasse)
+            {
+                resultat.Add(unAdherent);
+            }
+
+            return resultat;
+
         }
         #endregion
     }
