@@ -4,6 +4,7 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin_000001.Modeles;
+using Xamarin_000001.Vues;
 
 namespace Xamarin_000001.VueModeles
 {
